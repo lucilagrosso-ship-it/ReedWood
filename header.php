@@ -15,13 +15,11 @@
   <div class="rw-nav__inner">
 
     <a href="<?php echo esc_url( home_url( '/' ) ); ?>#inicio" class="rw-nav__logo" aria-label="Reed Wood — Inicio">
-      <div class="rw-nav__logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 16 16" aria-hidden="true">
-          <rect x="1" y="1" width="5" height="14" rx="1"/>
-          <rect x="10" y="1" width="5" height="14" rx="1"/>
-        </svg>
-      </div>
-      Reed Wood
+      <img
+        src="/bv-wp-content/uploads/2026/03/blancorw.png"
+        alt="Reed Wood"
+        style="height:48px;width:auto;display:block;"
+      >
     </a>
 
     <div class="rw-nav__links" role="list">

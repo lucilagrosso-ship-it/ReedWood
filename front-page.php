@@ -147,7 +147,7 @@ get_header();
           </div>
           <div class="rw-mt-img rw-mt-img--primary">
             <img
-              src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/WhatsApp-Image-2024-09-02-at-12.25.45-PM.jpeg"
+              src="/bv-wp-content/uploads/2026/04/ChatGPT-Image-22-abr-2026-11_59_31.png"
               alt="Reed Wood estructura"
               loading="lazy"
             >
@@ -184,7 +184,7 @@ get_header();
         <div class="rw-srv reveal">
           <div class="rw-srv__bg-num" aria-hidden="true">01</div>
           <div class="rw-srv__img">
-            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/02.jpeg" alt="Ingeniería y Consultoría" loading="lazy">
+            <img src="/bv-wp-content/uploads/2026/04/ChatGPT-Image-22-abr-2026-12_06_27.png" alt="Ingeniería y Consultoría" loading="lazy">
           </div>
           <div class="rw-srv__body">
             <h3>Ingeniería y Consultoría</h3>
