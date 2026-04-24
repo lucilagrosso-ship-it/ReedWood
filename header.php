@@ -44,12 +44,18 @@
   </div>
 </nav>
 
+<!-- Mobile Overlay -->
+<div id="rw-mobile-overlay" class="rw-mobile-overlay" aria-hidden="true"></div>
+
 <!-- Mobile Menu -->
-<div id="rw-mobile-menu" class="rw-mobile-menu" role="dialog" aria-label="Menú de navegación">
-  <a href="#nosotros">Nosotros</a>
-  <a href="#servicios">Servicios</a>
-  <a href="#mass-timber">Mass Timber</a>
-  <a href="#proyectos">Proyectos</a>
-  <a href="#clientes">Clientes</a>
-  <a href="#contacto" class="rw-btn rw-btn--primary">Contáctanos</a>
+<div id="rw-mobile-menu" class="rw-mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+
+  <nav class="rw-mobile-menu__nav">
+    <a href="#nosotros"   class="rw-mobile-menu__link">Nosotros</a>
+    <a href="#servicios"  class="rw-mobile-menu__link">Servicios</a>
+    <a href="#proyectos"  class="rw-mobile-menu__link">Proyectos</a>
+    <a href="#mass-timber" class="rw-mobile-menu__link">Mass Timber</a>
+    <a href="#contacto"  class="rw-mobile-menu__link rw-mobile-menu__link--cta">Contacto</a>
+  </nav>
+
 </div>

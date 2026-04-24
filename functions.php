@@ -18,17 +18,17 @@ add_action( 'after_setup_theme', function() {
 
 /* ── Enqueue Scripts & Styles ── */
 add_action( 'wp_enqueue_scripts', function() {
-    $ver = wp_get_theme()->get( 'Version' );
+    $dir = get_template_directory();
     $uri = get_template_directory_uri();
 
     // Main stylesheet
-    wp_enqueue_style( 'reedwood-styles', $uri . '/styles.css', [], $ver );
+    wp_enqueue_style( 'reedwood-styles', $uri . '/styles.css', [], filemtime( $dir . '/styles.css' ) );
 
     // GSAP (CDN)
     wp_enqueue_script( 'gsap', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js', [], '3.12.5', true );
 
     // Main JS (depends on GSAP)
-    wp_enqueue_script( 'reedwood-main', $uri . '/main.js', [ 'gsap' ], $ver, true );
+    wp_enqueue_script( 'reedwood-main', $uri . '/main.js', [ 'gsap' ], filemtime( $dir . '/main.js' ), true );
 
     // Pass REST API base URL to JS
     wp_localize_script( 'reedwood-main', 'rwData', [
