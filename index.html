@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reed Wood — Pioneros en sistemas Mass Timber en México. Investigación, ingeniería, fabricación y construcción con madera de ingeniería estructural.">
+  <title>Reed Wood — Madera de Ingeniería Estructural</title>
+
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER → ver header.html -->
+
+
+  <!-- ══════════════════════════════════════
+       HERO SLIDER
+  ══════════════════════════════════════ -->
+  <section id="inicio" aria-label="Hero">
+    <div class="rw-slider" id="rw-slider">
+
+      <!-- Slide 1 -->
+      <div class="rw-slide active">
+        <img
+          src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/IMG_6711-1-scaled.jpeg"
+          alt="Estructura Mass Timber Reed Wood"
+          loading="eager"
+        >
+        <div class="rw-slide__content">
+          <span class="rw-slide__label">Mass Timber · Reed Wood</span>
+          <h1 class="rw-slide__heading">Construimos el Futuro<br>con Madera de Ingeniería</h1>
+          <div class="rw-slide__foot">
+            <p class="rw-slide__body">Soluciones estructurales sustentables con tecnología Mass Timber. Desarrollamos, producimos y montamos sistemas constructivos de alto rendimiento.</p>
+            <a href="#contacto" class="rw-btn rw-btn--outline-light">
+              Contáctanos
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="rw-slide">
+        <img
+          src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/FOTO-PRINCIPAL-5.jpg"
+          alt="Sistema constructivo Mass Timber"
+          loading="lazy"
+        >
+        <div class="rw-slide__content">
+          <span class="rw-slide__label">Innovación · Reed Wood</span>
+          <h2 class="rw-slide__heading">El Sistema Constructivo<br>que Transforma Proyectos</h2>
+          <div class="rw-slide__foot">
+            <p class="rw-slide__body">Mass Timber abre nuevas posibilidades arquitectónicas: estructuras más limpias, cálidas y modernas, con el respaldo técnico de Reed Wood.</p>
+            <a href="#servicios" class="rw-btn rw-btn--outline-light">
+              Ver Servicios
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="rw-slide">
+        <img
+          src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/DJI_20251121225314_0080_D_websize-2-1.jpg"
+          alt="Proyecto Pérgola Las Canteras"
+          loading="lazy"
+        >
+        <div class="rw-slide__content">
+          <span class="rw-slide__label">Sustentabilidad · Reed Wood</span>
+          <h2 class="rw-slide__heading">Arquitectura Sustentable<br>con Madera Certificada</h2>
+          <div class="rw-slide__foot">
+            <p class="rw-slide__body">Reducimos el impacto ambiental y elevamos la calidad estructural mediante soluciones Mass Timber certificadas, diseñadas para un futuro más responsable.</p>
+            <a href="#sustentabilidad" class="rw-btn rw-btn--outline-light">
+              Nuestra Misión
+              <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation: arrows bottom-right -->
+      <div class="rw-slider__nav">
+        <button class="rw-slider__arr" id="rw-prev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+        </button>
+        <button class="rw-slider__arr" id="rw-next" aria-label="Siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+
+      <div class="rw-slider__progress" id="rw-progress" role="progressbar" aria-hidden="true"></div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       NOSOTROS
+  ══════════════════════════════════════ -->
+  <section id="nosotros" class="rw-section rw-section--light rw-nosotros">
+
+    <!-- Watermark: sección transversal de tronco (mass timber) -->
+    <div class="rw-nosotros__watermark" aria-hidden="true">
+      <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="300" cy="300" r="292" stroke="#0d0d0d" stroke-width="2.5"/>
+        <circle cx="300" cy="300" r="270" stroke="#0d0d0d" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="248" stroke="#0d0d0d" stroke-width="2"/>
+        <circle cx="300" cy="300" r="225" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="206" stroke="#0d0d0d" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="185" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="166" stroke="#0d0d0d" stroke-width="2"/>
+        <circle cx="300" cy="300" r="146" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="128" stroke="#0d0d0d" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="110" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="92" stroke="#0d0d0d" stroke-width="2"/>
+        <circle cx="300" cy="300" r="75" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="59" stroke="#0d0d0d" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="44" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="30" stroke="#0d0d0d" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="17" stroke="#0d0d0d" stroke-width="1"/>
+        <circle cx="300" cy="300" r="7" fill="#0d0d0d"/>
+        <line x1="300" y1="8" x2="300" y2="592" stroke="#0d0d0d" stroke-width="0.8"/>
+        <line x1="8" y1="300" x2="592" y2="300" stroke="#0d0d0d" stroke-width="0.8"/>
+        <line x1="92" y1="92" x2="508" y2="508" stroke="#0d0d0d" stroke-width="0.5" opacity="0.7"/>
+        <line x1="508" y1="92" x2="92" y2="508" stroke="#0d0d0d" stroke-width="0.5" opacity="0.7"/>
+        <line x1="300" y1="8" x2="300" y2="592" stroke="#0d0d0d" stroke-width="0.4" opacity="0.5" transform="rotate(22.5 300 300)"/>
+        <line x1="8" y1="300" x2="592" y2="300" stroke="#0d0d0d" stroke-width="0.4" opacity="0.5" transform="rotate(22.5 300 300)"/>
+        <line x1="300" y1="8" x2="300" y2="592" stroke="#0d0d0d" stroke-width="0.3" opacity="0.35" transform="rotate(45 300 300)"/>
+        <line x1="8" y1="300" x2="592" y2="300" stroke="#0d0d0d" stroke-width="0.3" opacity="0.35" transform="rotate(45 300 300)"/>
+      </svg>
+    </div>
+
+    <div class="rw-container">
+      <div class="rw-nosotros__body">
+
+        <!-- Columna izquierda: texto -->
+        <div class="rw-nosotros__text reveal-left">
+          <span class="rw-eyebrow">Quiénes somos</span>
+          <h2>Pioneros en<br>Mass Timber en México</h2>
+          <div class="rw-nosotros__accent" aria-hidden="true"></div>
+          <p>Reed Wood es una empresa mexicana dedicada a la investigación, ingeniería, desarrollo y construcción con madera de ingeniería estructural. Somos pioneros en México en sistemas Mass Timber, utilizando tecnologías avanzadas que están transformando la forma de construir en el país.</p>
+          <p>Nuestra misión es crear edificaciones de alto desempeño, sostenibles y eficientes, utilizando materiales certificados provenientes de plantaciones forestales responsables. Construimos proyectos modernos, ligeros y respetuosos con el medio ambiente, desde la conceptualización hasta la ejecución en obra.</p>
+        </div>
+
+        <!-- Columna derecha: imágenes -->
+        <div class="rw-nosotros__gallery rw-mt-visual reveal">
+          <div class="rw-mt-lines" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+          </div>
+          <div class="rw-mt-img rw-mt-img--primary">
+            <img
+              src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/WhatsApp-Image-2024-09-02-at-12.25.45-PM.jpeg"
+              alt="Reed Wood estructura"
+              loading="lazy"
+            >
+          </div>
+          <div class="rw-mt-img rw-mt-img--secondary">
+            <img
+              src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/WhatsApp-Image-2026-04-16-at-5.04.32-PM.jpeg"
+              alt="Reed Wood equipo"
+              loading="lazy"
+            >
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       SERVICIOS
+  ══════════════════════════════════════ -->
+  <section id="servicios" class="rw-section rw-section--dark rw-servicios">
+    <div class="rw-container">
+
+      <header class="rw-servicios__header">
+        <span class="rw-eyebrow reveal">Servicios</span>
+        <h2 class="reveal reveal-delay-1">Reed Wood ofrece una solución integral</h2>
+        <p class="rw-servicios__sub reveal reveal-delay-2">para construir con madera de ingeniería</p>
+      </header>
+
+      <div class="rw-srv-grid">
+
+        <!-- 01 -->
+        <div class="rw-srv reveal">
+          <div class="rw-srv__bg-num" aria-hidden="true">01</div>
+          <div class="rw-srv__img">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/02.jpeg" alt="Ingeniería y Consultoría" loading="lazy">
+          </div>
+          <div class="rw-srv__body">
+            <h3>Ingeniería y Consultoría</h3>
+            <p>En Reed Wood ofrecemos consultoría estructural especializada en madera de ingeniería, respaldada por un equipo de ingeniería in house con amplia experiencia en sistemas Mass Timber.</p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="rw-srv reveal reveal-delay-1">
+          <div class="rw-srv__bg-num" aria-hidden="true">02</div>
+          <div class="rw-srv__img">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/WhatsApp-Image-2026-04-16-at-5.52.36-PM.jpeg" alt="Producción y Abastecimiento" loading="lazy">
+          </div>
+          <div class="rw-srv__body">
+            <h3>Producción y Abastecimiento</h3>
+            <p>Reed Wood cuenta con una capacidad productiva única en México, respaldada por su planta local y una red estratégica de proveedores internacionales en Uruguay y Argentina, lo que nos permite abastecer proyectos de cualquier escala y exportar a cualquier país.</p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="rw-srv reveal reveal-delay-2">
+          <div class="rw-srv__bg-num" aria-hidden="true">03</div>
+          <div class="rw-srv__img">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/WhatsApp-Image-2026-04-16-at-6.06.42-PM.jpeg" alt="Montaje y Construcción" loading="lazy">
+          </div>
+          <div class="rw-srv__body">
+            <h3>Montaje y Construcción</h3>
+            <p>Contamos con la capacidad técnica y operativa para montar proyectos complejos de estructuras de madera, con un historial comprobado de más de 50,000 m² instalados en México, el Caribe y Sudamérica.</p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="rw-srv reveal reveal-delay-3">
+          <div class="rw-srv__bg-num" aria-hidden="true">04</div>
+          <div class="rw-srv__img">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Jaime-Navarro-00999-3-2.jpg" alt="Laboratorio de acabados" loading="lazy">
+          </div>
+          <div class="rw-srv__body">
+            <h3>Laboratorio de acabados</h3>
+            <p>Reed Wood cuenta con un laboratorio de acabados especializado, donde desarrollamos y aplicamos tratamientos de alta calidad para proteger y realzar la madera en cada proyecto.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="rw-servicios__footer reveal">
+        <a href="#contacto" class="rw-btn rw-btn--outline-light">
+          Conocer más
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       MASS TIMBER
+  ══════════════════════════════════════ -->
+  <section id="mass-timber" class="rw-masstimber">
+    <div class="rw-mt-split">
+
+      <!-- Panel izquierdo: slider moderno -->
+      <div class="rw-mt-split__img-wrap">
+        <div class="rw-mt-img-slider">
+
+          <!-- Imágenes -->
+          <div class="rw-mt-img-slide" data-index="0">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2024/12/RW-innovacion.jpg" alt="Innovación Mass Timber" loading="lazy">
+          </div>
+          <div class="rw-mt-img-slide" data-index="1">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/02.png" alt="Mass Timber estructura" loading="lazy">
+          </div>
+          <div class="rw-mt-img-slide" data-index="2">
+            <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/GLT-ima.png" alt="GLT Mass Timber Reed Wood" loading="lazy">
+          </div>
+
+          <!-- Overlay gradiente inferior -->
+          <div class="rw-mt-img-overlay"></div>
+
+          <!-- Barra de control -->
+          <div class="rw-mt-img-bar">
+            <div class="rw-mt-img-counter">
+              <span class="rw-mt-img-cur">01</span>
+              <span class="rw-mt-img-sep">/</span>
+              <span class="rw-mt-img-total">03</span>
+            </div>
+            <div class="rw-mt-img-progress-wrap">
+              <div class="rw-mt-img-progress-bar"></div>
+            </div>
+            <div class="rw-mt-img-nav">
+              <button class="rw-mt-img-prev" aria-label="Anterior">&#8592;</button>
+              <button class="rw-mt-img-next" aria-label="Siguiente">&#8594;</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Panel derecho: texto editorial -->
+      <div class="rw-mt-split__text">
+        <div class="rw-mt-split__inner">
+          <span class="rw-eyebrow reveal">La tecnología</span>
+          <h2 class="reveal reveal-delay-1">Mass Timber</h2>
+          <div class="rw-mt-split__accent reveal reveal-delay-1" aria-hidden="true"></div>
+          <div class="rw-mt-tags reveal reveal-delay-2">
+            <span class="rw-mt-tag">CLT</span>
+            <span class="rw-mt-tag">Glulam</span>
+          </div>
+          <div class="rw-mt-split__body">
+            <p class="reveal reveal-delay-2">El Mass Timber representa una evolución radical en la forma de diseñar y construir edificios. Se trata de un sistema constructivo avanzado basado en madera de ingeniería estructural, que combina alto desempeño estructural, eficiencia constructiva y sostenibilidad ambiental, posicionándose como una alternativa real y competitiva frente al concreto y el acero.</p>
+            <p class="reveal reveal-delay-3">En Reed Wood desarrollamos y comercializamos proyectos de vigas laminadas Glulam y paneles CLT (Cross Laminated Timber), soluciones ideales para edificaciones de mediana y gran escala, hoteles, usos mixtos, vivienda vertical, espacios comerciales y proyectos icónicos.</p>
+            <p class="reveal reveal-delay-4">Gracias a su excelente relación resistencia–peso, el Mass Timber permite estructuras más ligeras, cimentaciones menos demandantes y claros más amplios, reduciendo costos indirectos y tiempos de obra. Al tratarse de sistemas prefabricados y mecanizados, se logra una ejecución precisa, limpia y hasta un 50% más rápida que los sistemas tradicionales.</p>
+            <p class="reveal reveal-delay-5">Desde el punto de vista ambiental, la madera es el único material estructural renovable y con balance positivo de carbono, ya que almacena CO₂ durante toda la vida útil del edificio. El crecimiento del Mass Timber a nivel mundial responde a la necesidad urgente de construir de forma más responsable, eficiente y alineada con los estándares ESG y certificaciones ambientales.</p>
+            <p class="reveal reveal-delay-5">Hoy, el Mass Timber no es el futuro: es el presente de la construcción avanzada, y Reed Wood es uno de sus principales impulsores en México y Latinoamérica.</p>
+          </div>
+        </div>
+        <div class="rw-mt-split__wm" aria-hidden="true">MT</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       PROYECTOS
+  ══════════════════════════════════════ -->
+  <section id="proyectos" class="rw-section rw-section--charcoal">
+    <div class="rw-container">
+
+      <header class="rw-proyectos__header reveal">
+        <div>
+          <span class="rw-eyebrow rw-eyebrow--light">Portafolio</span>
+          <h2>Proyectos Realizados</h2>
+        </div>
+        <p>Desde pérgolas residenciales hasta estructuras de gran escala, cada proyecto es testimonio de nuestra capacidad técnica y pasión por la madera de ingeniería.</p>
+      </header>
+
+      <div class="rw-carousel" id="rw-proj-carousel">
+        <div class="rw-carousel__track" id="rw-proj-track">
+          <!-- Cards se renderizan dinámicamente desde la API de WordPress -->
+          <div class="rw-pcard-skeleton"></div>
+          <div class="rw-pcard-skeleton"></div>
+          <div class="rw-pcard-skeleton"></div>
+        </div>
+
+        <div class="rw-carousel__nav">
+          <button class="rw-carousel__btn" id="rw-proj-prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+          </button>
+          <button class="rw-carousel__btn" id="rw-proj-next" aria-label="Siguiente">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="32" height="32"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CLIENTES
+  ══════════════════════════════════════ -->
+  <section id="clientes" class="rw-clientes">
+    <div class="rw-container">
+      <p class="rw-clientes__titulo reveal">Clientes que confían en Reed Wood</p>
+    </div>
+    <div class="rw-marquee-wrap">
+      <div class="rw-marquee">
+        <div class="rw-marquee__track">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-1.png" alt="Cliente 1">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Frame-8.png" alt="Cliente 2">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-2.png" alt="Cliente 3">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-3.png" alt="Cliente 4">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-5.1.png" alt="Cliente 5">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-6.1.png" alt="Cliente 6">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-8.png" alt="Cliente 7">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-9.png" alt="Cliente 8">
+        </div>
+        <div class="rw-marquee__track" aria-hidden="true">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-1.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Frame-8.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-2.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-3.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-5.1.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-6.1.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-8.png" alt="">
+          <img src="https://reedwood12968.e.wpstage.net/bv-wp-content/uploads/2026/04/Group-9.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       CONTACTO
+  ══════════════════════════════════════ -->
+  <section id="contacto" class="rw-section rw-contacto">
+    <div class="rw-contacto__wm" aria-hidden="true">
+      <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="250" cy="250" r="240" stroke="currentColor" stroke-width="1.2"/>
+        <circle cx="250" cy="250" r="210" stroke="currentColor" stroke-width="0.9"/>
+        <circle cx="250" cy="250" r="178" stroke="currentColor" stroke-width="1.1"/>
+        <circle cx="250" cy="250" r="148" stroke="currentColor" stroke-width="0.8"/>
+        <circle cx="250" cy="250" r="120" stroke="currentColor" stroke-width="1"/>
+        <circle cx="250" cy="250" r="94"  stroke="currentColor" stroke-width="0.8"/>
+        <circle cx="250" cy="250" r="70"  stroke="currentColor" stroke-width="0.9"/>
+        <circle cx="250" cy="250" r="48"  stroke="currentColor" stroke-width="0.7"/>
+        <circle cx="250" cy="250" r="28"  stroke="currentColor" stroke-width="0.8"/>
+        <circle cx="250" cy="250" r="12"  stroke="currentColor" stroke-width="1"/>
+        <line x1="10"  y1="250" x2="490" y2="250" stroke="currentColor" stroke-width="0.5"/>
+        <line x1="250" y1="10"  x2="250" y2="490" stroke="currentColor" stroke-width="0.5"/>
+        <line x1="80"  y1="80"  x2="420" y2="420" stroke="currentColor" stroke-width="0.4"/>
+        <line x1="420" y1="80"  x2="80"  y2="420" stroke="currentColor" stroke-width="0.4"/>
+      </svg>
+    </div>
+
+    <div class="rw-container">
+      <div class="rw-contacto__inner">
+
+        <div class="rw-contacto__header">
+          <span class="rw-eyebrow reveal">Contacto</span>
+          <h2 class="rw-contacto__heading">
+            <span class="rw-ch reveal">¿Tienes</span>
+            <span class="rw-ch reveal reveal-delay-1">un proyecto</span>
+            <span class="rw-ch rw-ch--accent reveal reveal-delay-2">en mente?</span>
+          </h2>
+          <p class="reveal reveal-delay-3">Cuéntanos sobre tu proyecto y el equipo de Reed Wood te brindará una asesoría técnica especializada.</p>
+        </div>
+
+        <div class="rw-contacto__form-wrap reveal reveal-delay-1">
+          [wpforms id="2025"]
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER → ver footer.html -->
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="main.js"></script>
+  <script>
+  /* ── Mass Timber image slider (GSAP crossfade) ── */
+  (function initMtSlider() {
+    const slides  = document.querySelectorAll('.rw-mt-img-slide');
+    const curEl   = document.querySelector('.rw-mt-img-cur');
+    const progBar = document.querySelector('.rw-mt-img-progress-bar');
+    const prevBtn = document.querySelector('.rw-mt-img-prev');
+    const nextBtn = document.querySelector('.rw-mt-img-next');
+    if (!slides.length || typeof gsap === 'undefined') return;
+
+    const TOTAL = slides.length;
+    const DUR   = 5000;
+    let current = 0;
+    let progTween, timer;
+
+    function pad(n) { return String(n + 1).padStart(2, '0'); }
+
+    // Estado inicial
+    gsap.set(slides, { opacity: 0 });
+    gsap.set(slides[0], { opacity: 1 });
+    slides[0].classList.add('is-active');
+
+    function animProgress() {
+      if (!progBar) return;
+      if (progTween) progTween.kill();
+      gsap.set(progBar, { width: '0%' });
+      progTween = gsap.to(progBar, { width: '100%', duration: DUR / 1000, ease: 'none' });
+    }
+
+    function goTo(next) {
+      next = ((next % TOTAL) + TOTAL) % TOTAL;
+      if (next === current) return;
+
+      gsap.to(slides[current], { opacity: 0, duration: 0.6, ease: 'power2.inOut' });
+      gsap.fromTo(slides[next],
+        { opacity: 0, scale: 1.04 },
+        { opacity: 1, scale: 1, duration: 0.8, ease: 'power2.out' }
+      );
+
+      slides[current].classList.remove('is-active');
+      slides[next].classList.add('is-active');
+      current = next;
+      if (curEl) curEl.textContent = pad(current);
+      animProgress();
+    }
+
+    function start() {
+      clearInterval(timer);
+      timer = setInterval(() => goTo(current + 1), DUR);
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', () => { goTo(current - 1); start(); animProgress(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { goTo(current + 1); start(); animProgress(); });
+
+    animProgress();
+    start();
+  })();
+  </script>
+</body>
+</html>

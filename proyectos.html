@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reed Wood — Proyectos Mass Timber. Estructuras de madera de ingeniería estructural de alto desempeño en México y América Latina.">
+  <title>Proyectos — Reed Wood</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER → ver header.html -->
+
+
+  <!-- ══════════════════════════════════════
+       HERO BANNER
+  ══════════════════════════════════════ -->
+  <section id="inicio" class="rw-proy-hero" aria-label="Proyecto destacado">
+    <div class="rw-proy-hero__img">
+      <img
+        id="rw-proj-hero-img"
+        src=""
+        alt="Proyecto Mass Timber Reed Wood"
+        loading="eager"
+        fetchpriority="high"
+        decoding="async"
+      >
+    </div>
+
+    <!-- Overlay gradients -->
+    <div class="rw-proy-hero__overlay" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="rw-proy-hero__content">
+      <!-- Breadcrumb -->
+      <nav class="rw-proy-hero__breadcrumb" aria-label="Ruta de navegación">
+        <a href="index.html">Inicio</a>
+        <span aria-hidden="true">·</span>
+        <a href="index.html#proyectos">Proyectos</a>
+        <span aria-hidden="true">·</span>
+        <span id="rw-proj-bc-title">&nbsp;</span>
+      </nav>
+
+      <span class="rw-proy-hero__label">Mass Timber</span>
+      <h1 class="rw-proy-hero__heading" id="rw-proj-heading">&nbsp;</h1>
+    </div>
+
+    <!-- Hero scroll indicator -->
+    <div class="rw-proy-hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="rw-proy-hero__scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       FICHA TÉCNICA (METADATA STRIP)
+  ══════════════════════════════════════ -->
+  <section class="rw-proy-meta" aria-label="Ficha técnica del proyecto">
+    <div class="rw-container">
+      <div class="rw-proy-meta__grid">
+
+        <!-- Ubicación -->
+        <div class="rw-proy-meta__item reveal">
+          <div class="rw-proy-meta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <span class="rw-proy-meta__label">Ubicación</span>
+          <span class="rw-proy-meta__value" id="rw-proj-ubicacion">—</span>
+        </div>
+
+        <!-- Metros cuadrados -->
+        <div class="rw-proy-meta__item reveal reveal-delay-1">
+          <div class="rw-proy-meta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="2"/>
+              <path d="M3 9h18M9 3v18"/>
+            </svg>
+          </div>
+          <span class="rw-proy-meta__label">Superficie</span>
+          <span class="rw-proy-meta__value" id="rw-proj-m2">—</span>
+        </div>
+
+        <!-- Desarrollado por -->
+        <div class="rw-proy-meta__item reveal reveal-delay-2">
+          <div class="rw-proy-meta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+            </svg>
+          </div>
+          <span class="rw-proy-meta__label">Desarrollado por</span>
+          <span class="rw-proy-meta__value" id="rw-proj-by">—</span>
+        </div>
+
+        <!-- Etapa del proyecto -->
+        <div class="rw-proy-meta__item reveal reveal-delay-3">
+          <div class="rw-proy-meta__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+            </svg>
+          </div>
+          <span class="rw-proy-meta__label">Etapa</span>
+          <span class="rw-proy-meta__value" id="rw-proj-etapa">—</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       DESCRIPCIÓN
+  ══════════════════════════════════════ -->
+  <section id="descripcion" class="rw-section rw-section--light rw-proy-desc">
+
+    <div class="rw-proy-desc__wm" aria-hidden="true">
+      <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="300" cy="300" r="292" stroke="currentColor" stroke-width="2.5"/>
+        <circle cx="300" cy="300" r="268" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="244" stroke="currentColor" stroke-width="2"/>
+        <circle cx="300" cy="300" r="220" stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="198" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="176" stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="155" stroke="currentColor" stroke-width="2"/>
+        <circle cx="300" cy="300" r="134" stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="114" stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="95"  stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="77"  stroke="currentColor" stroke-width="2"/>
+        <circle cx="300" cy="300" r="60"  stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="44"  stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="29"  stroke="currentColor" stroke-width="1"/>
+        <circle cx="300" cy="300" r="16"  stroke="currentColor" stroke-width="1.5"/>
+        <circle cx="300" cy="300" r="6"   fill="currentColor"/>
+        <line x1="300" y1="8"   x2="300" y2="592" stroke="currentColor" stroke-width="0.7"/>
+        <line x1="8"   y1="300" x2="592" y2="300" stroke="currentColor" stroke-width="0.7"/>
+        <line x1="92"  y1="92"  x2="508" y2="508" stroke="currentColor" stroke-width="0.5" opacity="0.6"/>
+        <line x1="508" y1="92"  x2="92"  y2="508" stroke="currentColor" stroke-width="0.5" opacity="0.6"/>
+      </svg>
+    </div>
+
+    <div class="rw-container">
+      <div class="rw-proy-desc__inner">
+
+        <!-- Columna imagen -->
+        <div class="rw-proy-desc__visual reveal-left">
+          <div class="rw-proy-desc__img-wrap">
+            <img id="rw-proj-desc-img" src="" alt="Proyecto Reed Wood" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Columna texto -->
+        <div class="rw-proy-desc__text reveal">
+          <span class="rw-proy-desc__bracket">[ Descripción ]</span>
+          <h2 id="rw-proj-desc-heading">&nbsp;</h2>
+          <div class="rw-proy-desc__dots" aria-hidden="true">· · · · · · · · · · · · · · ·</div>
+          <div id="rw-proj-desc-content"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════════════════════════
+       GALERÍA DE IMÁGENES
+  ══════════════════════════════════════ -->
+  <section id="galeria" class="rw-section rw-section--charcoal rw-proy-gallery">
+    <div class="rw-container">
+
+      <header class="rw-proy-gallery__header reveal">
+        <div>
+          <span class="rw-eyebrow rw-eyebrow--light">Galería</span>
+          <h2>Imágenes del proyecto</h2>
+        </div>
+      </header>
+
+      <!-- Gallery grid — se construye dinámicamente -->
+      <div class="rw-proy-gallery__grid" id="rw-proj-gallery-grid">
+        <!-- Los items se insertan vía JS -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="rw-lightbox" id="rw-lightbox" role="dialog" aria-modal="true" aria-label="Visor de imágenes" hidden>
+    <button class="rw-lightbox__close" id="rw-lb-close" aria-label="Cerrar visor">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18"/>
+        <line x1="6" y1="6" x2="18" y2="18"/>
+      </svg>
+    </button>
+    <button class="rw-lightbox__nav rw-lightbox__nav--prev" id="rw-lb-prev" aria-label="Imagen anterior">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+        <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+      </svg>
+    </button>
+    <div class="rw-lightbox__img-wrap">
+      <img src="" alt="" id="rw-lb-img" class="rw-lightbox__img">
+    </div>
+    <button class="rw-lightbox__nav rw-lightbox__nav--next" id="rw-lb-next" aria-label="Imagen siguiente">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="28" height="28">
+        <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+      </svg>
+    </button>
+    <div class="rw-lightbox__counter" id="rw-lb-counter" aria-live="polite"></div>
+  </div>
+
+
+  <!-- ══════════════════════════════════════
+       CTA — VER MÁS PROYECTOS
+  ══════════════════════════════════════ -->
+  <section class="rw-proy-cta">
+    <div class="rw-container">
+      <div class="rw-proy-cta__inner reveal">
+        <div class="rw-proy-cta__text">
+          <span class="rw-eyebrow rw-eyebrow--light">Reed Wood</span>
+          <h2>¿Tienes un proyecto en mente?</h2>
+        </div>
+        <div class="rw-proy-cta__actions">
+          <a href="/#proyectos" class="rw-btn rw-btn--outline-light">
+            Ver más proyectos
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="/#contacto" class="rw-btn rw-btn--primary">
+            Contáctanos
+            <svg viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER → ver footer.html -->
+
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+  <script>
+  /* ============================================================
+     PROYECTO — carga dinámica desde WordPress REST API
+     Funciona desde:
+       - proyectos.html?slug=casa-amarillo
+       - proyectos.html?id=123
+       - /proyecto/casa-amarillo/  (WordPress permalink)
+  ============================================================ */
+  (async function initProject() {
+    const WP_BASE = 'https://reedwood12968.e.wpstage.net/wp-json/wp/v2';
+    const CPT     = 'proyecto';
+
+    /* ── Detectar slug ─────────────────────────────────────────
+       Prioridad:
+       1. ?slug= en query string
+       2. ?id=   en query string
+       3. Último segmento del path  (/proyecto/casa-amarillo/ → casa-amarillo)
+       4. Sin dato: carga el primer proyecto disponible
+    ───────────────────────────────────────────────────────── */
+    const params  = new URLSearchParams(window.location.search);
+    const slugVal = params.get('slug');
+    const idVal   = params.get('id');
+
+    /* Leer slug desde la ruta de WordPress: /proyecto/{slug}/ */
+    const pathParts  = window.location.pathname.replace(/\/$/, '').split('/').filter(Boolean);
+    const pathSlug   = pathParts.length ? pathParts[pathParts.length - 1] : '';
+
+    /* ── Construir endpoint (sin _embed para evitar 400) ─── */
+    let endpoint;
+    if (idVal) {
+      endpoint = `${WP_BASE}/${CPT}/${idVal}?_embed`;
+    } else if (slugVal) {
+      endpoint = `${WP_BASE}/${CPT}?slug=${encodeURIComponent(slugVal)}&_embed`;
+    } else if (pathSlug && pathSlug !== 'proyectos' && pathSlug !== 'proyecto') {
+      /* Viene de la URL de WordPress /proyecto/casa-amarillo/ */
+      endpoint = `${WP_BASE}/${CPT}?slug=${encodeURIComponent(pathSlug)}&_embed`;
+    } else {
+      /* Sin datos: carga el primer proyecto */
+      endpoint = `${WP_BASE}/${CPT}?per_page=1&_embed`;
+    }
+
+    console.log('[ReedWood] Slug detectado:', slugVal || idVal || pathSlug || '(primer proyecto)');
+    console.log('[ReedWood] Endpoint:', endpoint);
+
+    try {
+      const res = await fetch(endpoint);
+      console.log('[ReedWood] Status:', res.status);
+
+      if (!res.ok) {
+        if (res.status === 404) throw new Error(`El endpoint /wp/v2/${CPT} no existe. Activá REST API en el CPT dentro de Pods.`);
+        throw new Error(`HTTP ${res.status}`);
+      }
+
+      const raw = await res.json();
+      const project = Array.isArray(raw) ? raw[0] : raw;
+      console.log('[ReedWood] Proyecto:', project);
+      if (!project) throw new Error('No hay proyectos publicados todavía.');
+
+      /* ── Extraer campos ────────────────────────────────────
+         Pods con "Ubicación: campo personalizado" → project[key]
+         Pods con "Ubicación: metaobjeto"          → project.meta[key]
+         ACF                                        → project.acf[key]
+         Probamos los tres para máxima compatibilidad           */
+      const meta = project.meta || {};
+      const acf  = project.acf  || {};
+      const get  = (key) => {
+        const v = project[key] ?? acf[key] ?? meta[key];
+        return (v === null || v === undefined || v === false) ? '' : v;
+      };
+
+      const title     = project.title?.rendered || '';
+      const featMedia = project._embedded?.['wp:featuredmedia']?.[0];
+      const featImg   = featMedia?.media_details?.sizes?.full?.source_url
+                     || featMedia?.media_details?.sizes?.['2048x2048']?.source_url
+                     || featMedia?.source_url
+                     || '';
+      const ubicacion = get('ubiacion');
+      const m2        = get('m2');
+      const by        = get('by');
+      const etapa     = get('etapa');
+      const desc      = get('descripcion_del_proyecto');
+      const galeria   = get('galeria');
+
+      /* ── Poblar Hero ──────────────────────────────────── */
+      document.title = `${title} — Reed Wood`;
+
+      const headingEl = document.getElementById('rw-proj-heading');
+      if (headingEl) headingEl.textContent = title;
+
+      const bcEl = document.getElementById('rw-proj-bc-title');
+      if (bcEl) bcEl.textContent = title;
+
+      const heroImg = document.getElementById('rw-proj-hero-img');
+      if (heroImg && featImg) { heroImg.src = featImg; heroImg.alt = title; }
+
+      const descHeading = document.getElementById('rw-proj-desc-heading');
+      if (descHeading) descHeading.textContent = title;
+
+      const descImg = document.getElementById('rw-proj-desc-img');
+      if (descImg && featImg) { descImg.src = featImg; descImg.alt = title; }
+
+      /* ── Poblar Ficha técnica ─────────────────────────── */
+      setText('rw-proj-ubicacion', ubicacion);
+      setText('rw-proj-m2',        m2 ? m2 + ' m²' : '');
+      setText('rw-proj-by',        by);
+      setEtapa(etapa);
+
+      /* ── Poblar Descripción ───────────────────────────── */
+      const descContent = document.getElementById('rw-proj-desc-content');
+      if (descContent && desc) {
+        if (/<[a-z][\s\S]*>/i.test(desc)) {
+          descContent.innerHTML = desc;
+        } else {
+          descContent.innerHTML = desc
+            .split(/\n\n+/)
+            .map(p => `<p>${p.trim().replace(/\n/g, '<br>')}</p>`)
+            .join('');
+        }
+      }
+
+      /* ── Construir Galería ────────────────────────────── */
+      await buildGallery(galeria, title);
+
+      /* ── Reactivar animaciones reveal ─────────────────── */
+      reinitReveal();
+
+    } catch (err) {
+      console.error('[ReedWood] Error:', err.message);
+      showError(err.message);
+    }
+
+    /* ─────────────────────────────────────────────
+       Helpers
+    ───────────────────────────────────────────── */
+
+    function setText(id, value) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (value) {
+        el.textContent = value;
+      } else {
+        el.closest('.rw-proy-meta__item')?.remove();
+      }
+    }
+
+    function showError(msg) {
+      const hero = document.getElementById('rw-proj-heading');
+      if (hero) hero.textContent = 'No se pudo cargar el proyecto';
+      const bc = document.getElementById('rw-proj-bc-title');
+      if (bc) bc.textContent = 'Error';
+      const descContent = document.getElementById('rw-proj-desc-content');
+      if (descContent) {
+        descContent.innerHTML = `<p style="color:rgba(255,255,255,.5);font-size:.9rem;">${msg}</p>
+          <p style="color:rgba(255,255,255,.3);font-size:.8rem;margin-top:.5rem;">Revisá la consola del navegador (F12) para más detalles.</p>`;
+      }
+    }
+
+    function setEtapa(value) {
+      const el = document.getElementById('rw-proj-etapa');
+      if (!el) return;
+
+      const ETAPA_MAP = {
+        terminada:    { cls: 'rw-proy-meta__badge--done',     label: 'Obra terminada'  },
+        construccion: { cls: 'rw-proy-meta__badge--progress', label: 'En construcción' },
+        diseno:       { cls: 'rw-proy-meta__badge--design',   label: 'En diseño'       },
+        licitacion:   { cls: 'rw-proy-meta__badge--design',   label: 'En licitación'   },
+      };
+
+      if (!value) { el.closest('.rw-proy-meta__item')?.remove(); return; }
+
+      const key     = value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z]/g, '');
+      const match   = Object.entries(ETAPA_MAP).find(([k]) => key.includes(k));
+      const { cls, label } = match?.[1] ?? { cls: 'rw-proy-meta__badge--done', label: value };
+
+      el.innerHTML = `<span class="rw-proy-meta__badge ${cls}">${label}</span>`;
+    }
+
+    async function buildGallery(galeria, projectTitle) {
+      const grid = document.getElementById('rw-proj-gallery-grid');
+      if (!grid) return;
+
+      console.log('[ReedWood] galeria raw:', JSON.stringify(galeria));
+
+      /* Pods "Valores mostrados" devuelve URLs separadas por espacios en un string */
+      let raw;
+      if (typeof galeria === 'string') {
+        raw = galeria.trim().split(/\s+/).filter(u => /^https?:\/\//.test(u));
+      } else {
+        raw = Array.isArray(galeria) ? galeria : (galeria ? [galeria] : []);
+      }
+      if (!raw.length) { console.warn('[ReedWood] galeria vacía'); return; }
+
+      const images = await resolveImages(raw);
+      console.log('[ReedWood] imágenes resueltas:', images.length, images);
+      if (!images.length) return;
+
+      grid.innerHTML = '';
+
+      images.forEach((img, i) => {
+        const isFeatured = i === 0;
+        const delay      = i > 0 && i < 5 ? ` reveal-delay-${i}` : '';
+        const item       = document.createElement('div');
+
+        item.className   = `rw-proy-gallery__item${isFeatured ? ' rw-proy-gallery__item--featured' : ''} reveal${delay}`;
+        item.dataset.index = String(i);
+        item.innerHTML   = `
+          <img
+            src="${img.src}"
+            alt="${img.alt || projectTitle + ' — imagen ' + (i + 1)}"
+            loading="${isFeatured ? 'eager' : 'lazy'}"
+          >
+          <div class="rw-proy-gallery__overlay" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
+            </svg>
+          </div>`;
+        grid.appendChild(item);
+      });
+
+      initLightbox();
+    }
+
+    /* Normaliza un array mixto (IDs / URLs / objetos) a [{src, alt}] */
+    async function resolveImages(items) {
+      const results = [];
+      const mediaCache = {};
+
+      async function fetchMedia(id) {
+        if (mediaCache[id]) return mediaCache[id];
+        try {
+          const r = await fetch(`${WP_BASE}/media/${id}`);
+          if (!r.ok) return null;
+          const m = await r.json();
+          mediaCache[id] = { src: m.source_url || m.guid?.rendered || '', alt: m.alt_text || m.title?.rendered || '' };
+          return mediaCache[id];
+        } catch { return null; }
+      }
+
+      for (const item of items) {
+        if (!item) continue;
+
+        /* URL directa (string) */
+        if (typeof item === 'string' && /^https?:\/\//.test(item)) {
+          results.push({ src: item, alt: '' });
+          continue;
+        }
+
+        /* ID numérico como string o number */
+        if (typeof item === 'number' || (typeof item === 'string' && /^\d+$/.test(item))) {
+          const m = await fetchMedia(parseInt(item, 10));
+          if (m?.src) results.push(m);
+          continue;
+        }
+
+        /* Objeto — Pods puede devolver varias estructuras */
+        if (typeof item === 'object') {
+          /* Caso 1: tiene ID numérico → buscar en media API */
+          const id = item.ID || item.id;
+          if (id && typeof id === 'number') {
+            const m = await fetchMedia(id);
+            if (m?.src) { results.push({ src: m.src, alt: item.post_excerpt || item.alt || m.alt }); continue; }
+          }
+          /* Caso 2: tiene URL directa en distintas propiedades */
+          const src = item.url
+            || item.source_url
+            || item.guid?.rendered
+            || (typeof item.guid === 'string' ? item.guid : '')
+            || item.sizes?.large?.source_url
+            || item.sizes?.large?.url
+            || item.sizes?.full?.source_url
+            || item.sizes?.full?.url
+            || '';
+          const alt = item.alt || item.alt_text || item.post_excerpt || item.title?.rendered || item.post_title || '';
+          if (src) results.push({ src, alt });
+          continue;
+        }
+
+        /* Pods "Valores mostrados" puede devolver HTML — extrae src */
+        if (typeof item === 'string' && item.includes('<img')) {
+          const match = item.match(/src=["']([^"']+)["']/);
+          if (match) results.push({ src: match[1], alt: '' });
+        }
+      }
+      return results.filter(img => img.src);
+    }
+
+    function reinitReveal() {
+      if (!('IntersectionObserver' in window)) {
+        document.querySelectorAll('.reveal:not(.is-visible),.reveal-left:not(.is-visible),.reveal-right:not(.is-visible)')
+          .forEach(el => el.classList.add('is-visible'));
+        return;
+      }
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal:not(.is-visible),.reveal-left:not(.is-visible),.reveal-right:not(.is-visible)')
+        .forEach(el => obs.observe(el));
+    }
+  })();
+
+
+  /* ============================================================
+     LIGHTBOX
+     Función reutilizable — se llama aquí y tras buildGallery()
+  ============================================================ */
+  function initLightbox() {
+    const lb        = document.getElementById('rw-lightbox');
+    const lbImg     = document.getElementById('rw-lb-img');
+    const lbClose   = document.getElementById('rw-lb-close');
+    const lbPrev    = document.getElementById('rw-lb-prev');
+    const lbNext    = document.getElementById('rw-lb-next');
+    const lbCounter = document.getElementById('rw-lb-counter');
+    const items     = Array.from(document.querySelectorAll('.rw-proy-gallery__item'));
+    if (!lb || !items.length) return;
+
+    const images = items.map(el => ({
+      src: el.querySelector('img').src,
+      alt: el.querySelector('img').alt,
+    }));
+
+    let current = 0;
+
+    function openAt(index) {
+      current = (index + images.length) % images.length;
+      lbImg.src = images[current].src;
+      lbImg.alt = images[current].alt;
+      lbCounter.textContent = (current + 1) + ' / ' + images.length;
+      lb.hidden = false;
+      document.body.style.overflow = 'hidden';
+      lbClose.focus();
+    }
+
+    function close() {
+      lb.hidden = true;
+      document.body.style.overflow = '';
+    }
+
+    /* Limpiar listeners anteriores clonando los botones */
+    [lbClose, lbPrev, lbNext].forEach(btn => {
+      const clone = btn.cloneNode(true);
+      btn.parentNode.replaceChild(clone, btn);
+    });
+    const newClose = document.getElementById('rw-lb-close');
+    const newPrev  = document.getElementById('rw-lb-prev');
+    const newNext  = document.getElementById('rw-lb-next');
+
+    newClose.addEventListener('click', close);
+    newPrev.addEventListener('click',  () => openAt(current - 1));
+    newNext.addEventListener('click',  () => openAt(current + 1));
+    lb.addEventListener('click', e => { if (e.target === lb) close(); });
+
+    /* Registrar un solo listener de teclado */
+    document.removeEventListener('keydown', window.__rwLbKeyHandler);
+    window.__rwLbKeyHandler = (e) => {
+      if (lb.hidden) return;
+      if (e.key === 'Escape')     close();
+      if (e.key === 'ArrowLeft')  openAt(current - 1);
+      if (e.key === 'ArrowRight') openAt(current + 1);
+    };
+    document.addEventListener('keydown', window.__rwLbKeyHandler);
+
+    items.forEach((item, i) => {
+      /* Clonar para evitar listeners duplicados */
+      const clone = item.cloneNode(true);
+      item.parentNode.replaceChild(clone, item);
+      clone.setAttribute('tabindex', '0');
+      clone.setAttribute('role', 'button');
+      clone.setAttribute('aria-label', 'Ver imagen ampliada');
+      clone.addEventListener('click',   () => openAt(i));
+      clone.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openAt(i); }
+      });
+    });
+  }
+
+  /* Llamada inicial (por si hubiera items pre-renderizados) */
+  initLightbox();
+  </script>
+
+</body>
+</html>
